@@ -23,15 +23,16 @@ body {
 
 section {
   background-color: #e2e2e2;
-  max-width: 45em;
 }
 
 h2 {
   font-family: "Denk One", sans-serif;
+  font-size: 1.5rem;
   margin-top: 0;
 }
 
 .img-flex {
+  display: block;
   width: 100%;
 }
 
@@ -53,12 +54,27 @@ h2 {
   }
 
   .body {
-    background-color: rgba(0, 0, 0, 0.3);
+    background-color: rgba(0, 0, 0, .3);
     border-radius: 8px;
     position: absolute;
     right: 1.5em;
     bottom: 1.8em;
     max-width: 23em;
   }
+}
 
+@media only screen and (min-width: 60em) {
+
+  html {
+    font-size: 120%;
+    line-height: 1.5;
+  }
+}
+
+@media only screen and (min-width: 90em) {
+
+  html {
+    font-size: 130%;
+    line-height: 1.5;
+  }
 }
